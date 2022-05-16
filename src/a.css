@@ -1,0 +1,259 @@
+.hero-button {
+  position: relative;
+  height: 90px;
+  padding: 20px 0;
+  box-sizing: border-box;
+  text-align: center;
+}
+.hero-button .btn.btn-primary,
+.hero-button .btn.btn-white {
+  right: calc(50% - 110px);
+  width: 220px;
+  margin: 0 auto;
+  padding: 0;
+  transition: all 0.5s ease-in-out;
+  visibility: visible;
+  overflow: hidden;
+  transform: translateZ(0);
+}
+.hero-button .btn.btn-primary i,
+.hero-button .btn.btn-white i {
+  visibility: hidden;
+  position: relative;
+  font-size: 0;
+  color: transparent;
+  transition: all 0.5s ease-in-out;
+}
+.hero-button .btn.btn-primary span,
+.hero-button .btn.btn-white span {
+  visibility: visible;
+  position: relative;
+  font-size: 12px;
+  color: #fff;
+  transition: all 0.5s ease-in-out;
+}
+.hero-button .btn.btn-primary:hover,
+.hero-button .btn.btn-white:hover {
+  opacity: 0.9;
+}
+.hero-button .btn.btn-white span {
+  color: #5238b1;
+}
+@media (min-width: 768px) {
+  .hero-button {
+    height: 130px;
+    padding: 40px 0;
+  }
+}
+@media (min-width: 992px) {
+  .hero-button {
+    height: 170px;
+    padding: 40px 0 80px;
+  }
+}
+@media (min-width: 1200px) {
+  .hero-button {
+    height: 190px;
+    padding: 40px 0 100px;
+  }
+}
+.hero-button-float {
+  position: relative;
+  height: 90px;
+  padding: 20px 0;
+  box-sizing: border-box;
+  text-align: center;
+  border: 2px solid yellow;
+}
+.hero-button-float .btn {
+  box-shadow: none;
+}
+.hero-button-float .btn.btn-primary,
+.hero-button-float .btn.btn-white {
+  border: 2px solid red;
+  position: absolute;
+  bottom: calc(100vh - 70px);
+  left: calc(50% - 110px);
+  width: 220px;
+  margin: 0 auto;
+  padding: 0;
+  transition: all 0.5s ease-in-out;
+  visibility: visible;
+  overflow: hidden;
+  transform: translateZ(0);
+}
+.hero-button-float .btn.btn-primary i,
+.hero-button-float .btn.btn-white i {
+  visibility: hidden;
+  position: relative;
+  font-size: 0;
+  color: transparent;
+  transition: all 0.5s ease-in-out;
+}
+.hero-button-float .btn.btn-primary span,
+.hero-button-float .btn.btn-white span {
+  visibility: visible;
+  position: relative;
+  font-size: 12px;
+  color: #fff;
+  transition: all 0.5s ease-in-out;
+}
+.hero-button-float .btn.btn-primary:hover,
+.hero-button-float .btn.btn-white:hover {
+  opacity: 0.9;
+}
+@media (min-width: 768px) {
+  .hero-button-float .btn.btn-primary,
+  .hero-button-float .btn.btn-white {
+    bottom: calc(100vh - 90px);
+  }
+}
+.hero-button-float .btn.btn-white span {
+  color: #5238b1;
+}
+.hero-button-float.floating .btn {
+  box-shadow: none;
+}
+.hero-button-float.floating .btn.btn-primary,
+.hero-button-float.floating .btn.btn-white {
+  position: fixed;
+  z-index: 9;
+  bottom: 15px;
+  left: calc(100% - 75px);
+  width: 60px;
+  height: 60px;
+  padding: 22px 17px;
+  transition: all 0.5s ease-in-out;
+  visibility: visible;
+  background-color: #ef4b6c;
+  border-radius: 50%;
+  transform: translateZ(0);
+}
+.hero-button-float.floating .btn.btn-primary i,
+.hero-button-float.floating .btn.btn-white i {
+  visibility: visible;
+  font-size: 16px;
+  color: #fff;
+  transition: all 0.5s ease-in-out;
+}
+@media (min-width: 768px) {
+  .hero-button-float.floating .btn.btn-primary i,
+  .hero-button-float.floating .btn.btn-white i {
+    font-size: 20px;
+  }
+}
+.hero-button-float.floating .btn.btn-primary span,
+.hero-button-float.floating .btn.btn-white span {
+  visibility: hidden;
+  font-size: 0;
+  color: transparent;
+  transition: all 0.5s ease-in-out;
+}
+.hero-button-float.floating .btn.btn-primary:hover,
+.hero-button-float.floating .btn.btn-white:hover {
+  opacity: 0.9;
+}
+@media (min-width: 768px) {
+  .hero-button-float.floating .btn.btn-primary,
+  .hero-button-float.floating .btn.btn-white {
+    bottom: 30px;
+    left: calc(100% - 94px);
+    width: 64px;
+    height: 64px;
+    padding: 22px 17px;
+  }
+}
+.hero-button-float.floating.hide .btn.btn-primary,
+.hero-button-float.floating.hide .btn.btn-white {
+  bottom: -75px;
+}
+.hero-button-float.floating.hide .btn.btn-primary i,
+.hero-button-float.floating.hide .btn.btn-primary span,
+.hero-button-float.floating.hide .btn.btn-white i,
+.hero-button-float.floating.hide .btn.btn-white span {
+  visibility: hidden;
+}
+@media (min-width: 768px) {
+  .hero-button-float.floating.hide .btn.btn-primary,
+  .hero-button-float.floating.hide .btn.btn-white {
+    bottom: -94px;
+  }
+}
+@media (min-width: 768px) {
+  .hero-button-float {
+    height: 130px;
+    padding: 40px 0;
+  }
+}
+@media (min-width: 992px) {
+  .hero-button-float {
+    height: 170px;
+    padding: 40px 0 80px;
+  }
+}
+@media (min-width: 1200px) {
+  .hero-button-float {
+    height: 190px;
+    padding: 40px 0 100px;
+  }
+}
+.hero-button-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+}
+.hero-button-fixed {
+  position: relative;
+}
+.hero-button-fixed .btn.btn-primary {
+  position: fixed;
+  z-index: 9;
+  top: calc(100% + 50px);
+  right: 15px;
+  width: 50px;
+  height: 50px;
+  padding: 17px 16px;
+  transition: all 0.5s ease-in-out;
+  visibility: visible;
+  background-color: #ef4b6c;
+  border-radius: 50%;
+}
+.hero-button-fixed .btn.btn-primary i {
+  visibility: visible;
+  font-size: 16px;
+  color: #fff;
+  transition: all 0.5s ease-in-out;
+}
+@media (min-width: 768px) {
+  .hero-button-fixed .btn.btn-primary i {
+    font-size: 20px;
+  }
+}
+.hero-button-fixed .btn.btn-primary span {
+  visibility: hidden;
+  font-size: 0;
+  color: transparent;
+  transition: all 0.5s ease-in-out;
+}
+.hero-button-fixed .btn.btn-primary:hover {
+  opacity: 0.9;
+}
+@media (min-width: 768px) {
+  .hero-button-fixed .btn.btn-primary {
+    top: calc(100% + 50px);
+    right: 40px;
+    width: 64px;
+    height: 64px;
+    padding: 22px 21px;
+  }
+}
+.hero-button-fixed.show .btn.btn-primary {
+  top: calc(100% - 65px);
+}
+@media (min-width: 768px) {
+  .hero-button-fixed.show .btn.btn-primary {
+    top: calc(100% - 94px);
+  }
+}
